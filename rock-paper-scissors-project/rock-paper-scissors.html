@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="rock-paper-scissors.css">
+    <script src="rock-paper-scissors.js" defer></script>
+  </head>
+  <body>
+    <h1 style="text-align: center; font-weight: 700; margin-bottom: 50px;">Rock - Paper - Scissors</h1>
+    <div style="display: flex; justify-content: center; margin-bottom: 35px; gap: 50px">
+        <button class="moveButtons rockButton"><img src="images/rock-emoji.png" class="moveIcons" alt="rock emoji"></button>
+
+        <button class="moveButtons paperButton"><img src="images/paper-emoji.png" class="moveIcons" alt="paper emoji"></button>
+
+        <button class="moveButtons scissorsButton"><img src="images/scissors-emoji.png" class="moveIcons" alt="scissors emoji"></button>
+    </div>
+    
+    <div style="display: flex;  align-items: center; justify-content: center; margin-bottom: 100px;">
+      <h3 class="js-score result"></h3>
+      <div>
+        <button class="resetScore">Reset Score</button>
+
+        <button class="autoPlay">Auto Play</button>
+      </div>
+    </div>
+
+    <h3 class="js-result result"></h3>
+    <h3 class="js-moves result"></h3>
+
+  </body>
+</html>
