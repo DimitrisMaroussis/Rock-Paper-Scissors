@@ -4,18 +4,8 @@ let score = JSON.parse(localStorage.getItem('score')) || {
     ties: 0
 };
 
-
 updateScoreElement();
 
-/*
-if (!score) {
-score = {
-    wins: 0,
-    losses: 0,
-    ties: 0
-};
-}
-*/
 document.querySelector('.rockButton').addEventListener('click', () => {
     playGame('rock');
 });
