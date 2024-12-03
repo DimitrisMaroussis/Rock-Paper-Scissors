@@ -1,4 +1,4 @@
-# Rock Paper Scissors Game <img src="path-to-your-rock-image.png" alt="Rock">✂️📜
+# Rock Paper Scissors Game ⛰️✂️📜
 
 A simple, interactive **Rock Paper Scissors** game implemented using **JavaScript**, **HTML**, and **CSS**. The game includes features like manual play, auto-play, and score tracking with data persistence using `localStorage`.
 
