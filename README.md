@@ -15,4 +15,5 @@ A simple, interactive **Rock Paper Scissors** game implemented using **JavaScrip
   - Press **S** for Scissors
 - **Reset Score**: A button to reset the score and clear stored data.
 - **Dynamic UI**: Displays results and moves using images and updates scores in real time.
+- 
 ![image](https://github.com/user-attachments/assets/5b826b71-2d6b-4598-b66d-8f298743b0b5)
