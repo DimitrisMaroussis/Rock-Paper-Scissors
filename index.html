@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rock Paper Scissors</title>
+    <meta name="description" content="Play rock paper scissors against the computer. Your score is saved in your browser.">
+    <meta name="theme-color" content="#1e3bb3">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&display=swap">
+    <link rel="stylesheet" href="styles.css">
+    <script src="src/game.js" defer></script>
+    <script src="src/main.js" defer></script>
+  </head>
+  <body>
+    <main class="table">
+      <header class="masthead">
+        <h1>Rock Paper Scissors</h1>
+        <p class="hint">Pick a move<span class="hint-keys">, or press <kbd>R</kbd>, <kbd>P</kbd> or <kbd>S</kbd></span>.</p>
+      </header>
+
+      <section class="arena" aria-label="This round">
+        <figure class="hand">
+          <div class="slot" data-slot="you"></div>
+          <figcaption>You</figcaption>
+        </figure>
+        <span class="versus" aria-hidden="true">vs</span>
+        <figure class="hand hand--computer">
+          <div class="slot" data-slot="computer"></div>
+          <figcaption>Computer</figcaption>
+        </figure>
+      </section>
+
+      <div class="verdict" aria-live="polite">
+        <p class="phrase">Your move.</p>
+        <p class="outcome" hidden></p>
+      </div>
+
+      <div class="moves" role="group" aria-label="Your move">
+        <button type="button" class="move" data-move="rock" aria-keyshortcuts="R">
+          <img src="images/rock-emoji.png" alt=""><span>Rock</span><kbd>R</kbd>
+        </button>
+        <button type="button" class="move" data-move="paper" aria-keyshortcuts="P">
+          <img src="images/paper-emoji.png" alt=""><span>Paper</span><kbd>P</kbd>
+        </button>
+        <button type="button" class="move" data-move="scissors" aria-keyshortcuts="S">
+          <img src="images/scissors-emoji.png" alt=""><span>Scissors</span><kbd>S</kbd>
+        </button>
+      </div>
+
+      <footer class="scoreboard">
+        <dl class="score">
+          <div class="score__item score__item--wins"><dt>Wins</dt><dd data-score="wins">0</dd></div>
+          <div class="score__item score__item--losses"><dt>Losses</dt><dd data-score="losses">0</dd></div>
+          <div class="score__item score__item--ties"><dt>Ties</dt><dd data-score="ties">0</dd></div>
+        </dl>
+        <div class="controls">
+          <button type="button" class="control auto-play" aria-pressed="false">Auto play</button>
+          <button type="button" class="control reset-score">Reset score</button>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
